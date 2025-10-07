@@ -45,7 +45,7 @@ function Contact() {
           style={{ transitionDelay: `${delays[2]}ms` }}
         >
           <img src="/images/address.png" alt="Address icon" className="w-10 h-10" />
-          <span>THE CROWN, WEST BROMWICH STREET, WALSALL, WS1 4BP</span>
+          <span>The Crown, West Bromwich Street, Walsall, WS1 4BP</span>
         </li>
         <li
           className={`transition-all duration-700 ease-out flex items-center space-x-2

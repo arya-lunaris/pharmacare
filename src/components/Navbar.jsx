@@ -51,6 +51,18 @@ function Navbar() {
               Services
             </NavLink>
             <NavLink
+              to="/facilities"
+              className={({ isActive }) =>
+                `font-medium transition-colors duration-300 ${
+                  isActive
+                    ? "text-[#00E0BD] no-underline"
+                    : "text-gray-700 hover:underline"
+                }`
+              }
+            >
+              Facilities
+            </NavLink>
+            <NavLink
               to="/contact"
               className={({ isActive }) =>
                 `font-medium transition-colors duration-300 ${
