@@ -26,13 +26,13 @@ function Home() {
   return (
     <div className="p-8 text-center">
       <h1
-        className="text-4xl font-bold text-gray-800"
+        className="text-4xl font-bold text-gray-800 mb-5"
         style={getTransitionStyle(headingDelay)}
       >
         Welcome to Pharmacare
       </h1>
       <p
-        className="mt-4 text-gray-600 max-w-2xl mx-auto"
+        className="text-gray-600 max-w-2xl mx-auto mb-15"
         style={getTransitionStyle(paragraphDelay)}
       >
         Your trusted local pharmacy for prescriptions, health advice, and wellness services. 
@@ -42,13 +42,13 @@ function Home() {
       <img
         src="/images/pharmacist.jpg"
         alt="Pharmacist helping a customer"
-        className="mx-auto mt-6 max-w-md rounded-lg shadow-md"
+        className="mx-auto max-w-lg rounded-lg shadow-md mb-10"
         style={getTransitionStyle(imageDelay)}
       />
 
       <button
         onClick={() => navigate('/about')}
-        className="mt-6 px-6 py-3 bg-[#00E0BD] text-white font-medium rounded-full hover:bg-teal-400 transition-colors cursor-pointer"
+        className="px-6 py-3 bg-[#00E0BD] text-white font-medium rounded-full hover:bg-teal-400 transition-colors cursor-pointer"
         style={getTransitionStyle(buttonDelay)}
       >
         Learn More
