@@ -72,25 +72,25 @@ function Contact() {
         `}
         style={{ transitionDelay: `${delays[5]}ms` }}
       >
-        <table className="border-collapse rounded-lg bg-[#00E0BD] text-white mx-auto w-full max-w-md text-lg">
+        <table className="border-collapse rounded-3xl bg-[#00E0BD] text-white mx-auto w-full max-w-md text-lg">
           <thead>
             <tr>
-              <th className="px-6 py-4 text-left rounded font-semibold text-xl">Day</th>
-              <th className="px-6 py-4 text-left rounded font-semibold text-xl">Opening Times</th>
+              <th className="px-6 py-4 text-left rounded-3xl font-semibold text-xl">Day</th>
+              <th className="px-6 py-4 text-left rounded-3xl font-semibold text-xl">Opening Times</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="px-6 py-4 rounded">Monday - Friday</td>
-              <td className="px-6 py-4 rounded">9:00 AM - 6:00 PM</td>
+              <td className="px-6 py-4 rounded-3xl">Monday - Friday</td>
+              <td className="px-6 py-4 rounded-3xl">9:00 AM - 6:00 PM</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 rounded">Saturday</td>
-              <td className="px-6 py-4 rounded">9:00 AM - 1:00 PM</td>
+              <td className="px-6 py-4 rounded-3xl">Saturday</td>
+              <td className="px-6 py-4 rounded-3xl">9:00 AM - 1:00 PM</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 rounded">Sunday</td>
-              <td className="px-6 py-4 rounded">Closed</td>
+              <td className="px-6 py-4 rounded-3xl">Sunday</td>
+              <td className="px-6 py-4 rounded-3xl">Closed</td>
             </tr>
           </tbody>
         </table>

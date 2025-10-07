@@ -1,22 +1,31 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Services() {
   const [loaded, setLoaded] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoaded(true);
   }, []);
 
-  const services = [
-    "Prescription Refills",
-    "NHS and Private Vaccinations",
-    "Health Consultations",
-    "Prescription Delivery",
-    "Over-the-Counter Medicines",
+  const sections = [
+    {
+      title: "Prescription services",
+      link: "/prescription",
+    },
+    {
+      title: "Screening and test services",
+      link: "/screening",
+    },
+    {
+      title: "Vaccination services",
+      link: "/vaccination",
+    },
   ];
 
   return (
-    <div className="p-8 flex flex-col items-center">
+    <div className="p-8 flex flex-col items-center space-y-6">
       <h1
         className={`text-3xl font-bold text-gray-800 transition-all duration-500 transform ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
@@ -25,19 +34,25 @@ function Services() {
       >
         Our Services
       </h1>
-      <ul className="mt-4 space-y-2 text-gray-700 list-disc list-inside flex flex-col items-center p-0 m-0">
-        {services.map((service, index) => (
-          <li
-            key={service}
-            className={`transition-all duration-500 transform ${
+      <div className="flex flex-wrap justify-center gap-6 mt-6 w-full max-w-5xl">
+        {sections.map((section, index) => (
+          <div
+            key={section.title}
+            className={`bg-[#00E0BD] text-white rounded-3xl p-8 flex flex-col justify-between items-center w-72 transition-all duration-500 transform ${
               loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
             style={{ transitionDelay: `${300 + index * 100}ms` }}
           >
-            {service}
-          </li>
+            <h2 className="text-xl font-semibold mb-6 text-center">{section.title}</h2>
+            <button
+              onClick={() => navigate(section.link)}
+              className="bg-[#00E0BD] text-white border border-white font-semibold px-6 py-2 rounded-full hover:bg-white hover:text-[#00E0BD] hover:border-[#00E0BD] transition-colors cursor-pointer"
+            >
+              Learn More
+            </button>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
