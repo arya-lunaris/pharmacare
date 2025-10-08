@@ -22,7 +22,7 @@ function Contact() {
   return (
     <div className="p-8 flex flex-col items-center">
       <h1
-        className={`mt-5 text-4xl font-bold text-gray-800 transition-all duration-700 ease-out
+        className={`mt-5 text-4xl font-bold text-[#5C427D] transition-all duration-700 ease-out
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[0]}ms` }}
@@ -40,7 +40,7 @@ function Contact() {
       </p>
 
       <div
-        className={`rounded-3xl border border-[#00E0BD] p-8 mb-10 mt-4 transition-all duration-700 ease-out max-w-2xl w-full
+        className={`rounded-3xl border border-[#A996CA] p-8 mb-10 mt-4 transition-all duration-700 ease-out max-w-2xl w-full
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[2]}ms` }}
@@ -81,7 +81,7 @@ function Contact() {
         `}
         style={{ transitionDelay: `${delays[6]}ms` }}
       >
-        <table className="border-collapse rounded-3xl bg-[#00E0BD] text-white w-full text-xl">
+        <table className="border-collapse rounded-3xl bg-[#A996CA] text-white w-full text-xl">
           <thead>
             <tr>
               <th className="px-6 py-5 text-center rounded-3xl font-semibold text-xl">Day</th>

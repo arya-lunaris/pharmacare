@@ -10,7 +10,7 @@ const ScreeningServices = () => {
   return (
     <div style={{ textAlign: 'center', padding: '2rem' }}>
       <h1
-        className="text-4xl font-bold text-gray-800 mb-15"
+        className="text-4xl font-bold text-[#5C427D] mb-15"
         style={{
           opacity: loaded ? 1 : 0,
           transform: loaded ? 'translateY(0)' : 'translateY(20px)',
@@ -33,10 +33,10 @@ const ScreeningServices = () => {
           transition: 'opacity 0.6s ease, transform 0.6s ease',
           transitionDelay: '0.3s',
           textAlign: 'center',
-          border: '2px solid #00E0BD'
+          border: '2px solid #A996CA'
         }}
       >
-        <h2 style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem', color: '#00E0BD' }}>
+        <h2 style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem', color: '#5C427D' }}>
           Type 2 Diabetes Screening
         </h2>
         <img 

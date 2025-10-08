@@ -30,7 +30,7 @@ function Services() {
   return (
     <div className="p-8 flex flex-col items-center space-y-6">
       <h1
-        className={`text-4xl font-bold text-gray-800 transition-all duration-500 transform ${
+        className={`text-4xl font-bold text-[#5C427D] transition-all duration-500 transform ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
         style={{ transitionDelay: "100ms" }}
@@ -42,7 +42,7 @@ function Services() {
         {sections.map((section, index) => (
           <div
             key={section.title}
-            className={`bg-[#00E0BD] text-white rounded-3xl p-8 flex flex-col justify-between items-center w-90 transition-all duration-500 transform ${
+            className={`bg-[#A996CA] text-white rounded-3xl p-8 flex flex-col justify-between items-center w-90 transition-all duration-500 transform ${
               loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
             style={{ transitionDelay: `${300 + index * 100}ms` }}
@@ -55,7 +55,7 @@ function Services() {
             />
             <button
               onClick={() => navigate(section.link)}
-              className="bg-[#00E0BD] text-white border border-white font-semibold px-6 py-2 rounded-full hover:bg-white hover:text-[#00E0BD] hover:border-[#00E0BD] transition-colors cursor-pointer"
+              className="bg-[#A996CA] text-white border border-white font-semibold px-6 py-2 rounded-full hover:bg-white hover:text-[#A996CA] hover:border-[#A996CA] transition-colors cursor-pointer"
             >
               Learn More
             </button>

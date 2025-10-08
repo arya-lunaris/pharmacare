@@ -53,7 +53,7 @@ function Home() {
   return (
     <div className="p-8 text-center">
       <h1
-        className="text-4xl font-bold text-gray-800 mb-5"
+        className="text-4xl font-bold text-[#5C427D] mb-5"
         style={getTransitionStyle(headingDelay)}
       >
         Welcome to Pharmacare
@@ -67,7 +67,7 @@ function Home() {
       </p>
 
       <div
-        className="w-screen bg-[#00E0BD] py-10 mb-10 -mx-8"
+        className="w-screen bg-[#A996CA] py-10 mb-10 -mx-8"
         style={{
           opacity: loaded ? 1 : 0,
           transform: loaded ? 'translateY(0)' : 'translateY(32px)',
@@ -119,7 +119,7 @@ function Home() {
 
       <button
         onClick={() => navigate('/about')}
-        className="px-6 py-3 bg-[#00E0BD] text-white font-medium rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#00E0BD] hover:ring-offset-2 hover:ring-offset-white"
+        className="px-6 py-3 bg-[#A996CA] text-white font-medium rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#A996CA] hover:ring-offset-2 hover:ring-offset-white"
         style={getTransitionStyle(buttonDelay)}
       >
         Learn More

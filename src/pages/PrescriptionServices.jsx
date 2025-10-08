@@ -60,7 +60,7 @@ export default function PrescriptionServices() {
         textAlign: 'center',
       }}
     >
-      <h1 className="text-4xl font-bold text-gray-800 mb-15" style={{
+      <h1 className="text-4xl font-bold text-[#5C427D] mb-15" style={{
         opacity: loaded ? 1 : 0,
         transform: loaded ? 'translateY(0)' : 'translateY(20px)',
         transition: 'opacity 0.6s ease, transform 0.6s ease',
@@ -79,7 +79,7 @@ export default function PrescriptionServices() {
             style={{
               backgroundColor: 'white',
               color: 'black',
-              border: '2px solid #00E0BD',
+              border: '2px solid #A996CA',
               borderRadius: '2rem',
               padding: '1.5rem 2rem',
               opacity: loaded ? 1 : 0,
@@ -88,7 +88,7 @@ export default function PrescriptionServices() {
               textAlign: 'center',
             }}
           >
-            <h2 className="text-2xl font-semibold text-[#00E0BD]">{service.title}</h2>
+            <h2 className="text-2xl font-semibold text-[#5C427D]">{service.title}</h2>
             {service.title === 'Medical Supplies (Appliances)' && (
               <img src="/images/medical-supplies.jpg" alt="Medical Supplies" className="mx-auto -mb-4 rounded-2xl" style={{ width: '100%', maxWidth: '100%' }} />
             )}

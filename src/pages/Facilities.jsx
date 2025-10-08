@@ -10,7 +10,7 @@ function Facilities() {
   return (
     <div className="py-16 flex flex-col items-center text-center">
       <h1
-        className={`mb-16 text-4xl font-bold text-gray-800 transition-all duration-700 ease-out transform ${
+        className={`mb-16 text-4xl font-bold text-[#5C427D] transition-all duration-700 ease-out transform ${
           loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
         style={{ transitionDelay: '100ms' }}
@@ -20,7 +20,7 @@ function Facilities() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl mx-auto text-left">
         <div
-          className={`p-10 rounded-3xl bg-[#00E0BD] text-white text-xl transition-all duration-700 ease-out transform ${
+          className={`p-10 rounded-3xl bg-[#A996CA] text-white text-xl transition-all duration-700 ease-out transform ${
             loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
           style={{ transitionDelay: '200ms' }}
@@ -39,7 +39,7 @@ function Facilities() {
 
         <div className="flex flex-col gap-10">
           <div
-            className={`p-10 rounded-3xl bg-[#00E0BD] text-white text-xl transition-all duration-700 ease-out transform ${
+            className={`p-10 rounded-3xl bg-[#A996CA] text-white text-xl transition-all duration-700 ease-out transform ${
               loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
             style={{ transitionDelay: '300ms' }}
@@ -53,7 +53,7 @@ function Facilities() {
           </div>
 
           <div
-            className={`p-10 rounded-3xl bg-[#00E0BD] text-white text-xl transition-all duration-700 ease-out transform ${
+            className={`p-10 rounded-3xl bg-[#A996CA] text-white text-xl transition-all duration-700 ease-out transform ${
               loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
             style={{ transitionDelay: '450ms' }}

@@ -17,15 +17,15 @@ function About() {
   return (
     <div className="p-8 flex flex-col items-center text-center space-y-16">
       <h1
-        className="text-4xl font-bold text-gray-800 mb-15"
+        className="text-4xl font-bold text-[#5C427D] mb-15"
         style={getTransitionStyle(200)}
       >
         About Pharmacare
       </h1>
 
       {/* Introduction / Overview */}
-      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(300)}>
-        <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Who We Are</h2>
+      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(300)}>
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Who We Are</h2>
         <img src="/images/who.jpg" alt="Who We Are" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg">
           Pharmacare is your trusted local pharmacy, proudly serving the community with care and professionalism.
@@ -34,8 +34,8 @@ function About() {
       </section>
 
       {/* Mission & Values */}
-      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(400)}>
-        <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Our Mission & Values</h2>
+      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(400)}>
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Our Mission & Values</h2>
         <img src="/images/mission.jpg" alt="Mission and Values" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg">
           Our mission is simple — to deliver quality healthcare that’s personal, accessible, and compassionate.
@@ -45,8 +45,8 @@ function About() {
       </section>
 
       {/* Meet the Team */}
-      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(500)}>
-        <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Meet the Team</h2>
+      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(500)}>
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Meet the Team</h2>
         <img src="/images/team.jpg" alt="Our Team" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg mb-4">
           Our friendly pharmacists and staff have years of experience in healthcare and patient support.
@@ -55,8 +55,8 @@ function About() {
       </section>
 
       {/* Community Commitment */}
-      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(600)}>
-        <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Our Community</h2>
+      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(600)}>
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Our Community</h2>
         <img src="/images/community.jpg" alt="Our Community" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg">
           We’re more than just a pharmacy — we’re part of the community. 

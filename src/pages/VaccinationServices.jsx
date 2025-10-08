@@ -12,7 +12,7 @@ const VaccinationServices = () => {
   return (
     <div className="service-page" style={{ textAlign: 'center', padding: '2rem' }}>
       <h1
-        className="text-4xl font-bold text-gray-800"
+        className="text-4xl font-bold text-[#5C427D]"
         style={{
           marginBottom: '2rem',
           opacity: loaded ? 1 : 0,
@@ -30,7 +30,7 @@ const VaccinationServices = () => {
           style={{
             backgroundColor: 'white',
             color: 'black',
-            border: '2px solid #00E0BD',
+            border: '2px solid #A996CA',
             borderRadius: '2rem',
             padding: '2rem',
             maxWidth: '600px',
@@ -41,7 +41,7 @@ const VaccinationServices = () => {
             transitionDelay: '0.2s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#00E0BD' }}>
+          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#5C427D' }}>
             Flu Vaccination Service (NHS Service)
           </h2>
           <img src="/images/vaccine.jpg" alt="Flu vaccination NHS" className="mx-auto mb-4 w-full rounded-2xl" />
@@ -68,7 +68,7 @@ const VaccinationServices = () => {
           style={{
             backgroundColor: 'white',
             color: 'black',
-            border: '2px solid #00E0BD',
+            border: '2px solid #A996CA',
             borderRadius: '2rem',
             padding: '2rem',
             maxWidth: '600px',
@@ -79,7 +79,7 @@ const VaccinationServices = () => {
             transitionDelay: '0.4s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#00E0BD' }}>Flu Vaccination Service (Paid Service)</h2>
+          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#5C427D' }}>Flu Vaccination Service (Paid Service)</h2>
           <img src="/images/vaccine-paid.jpg" alt="Flu vaccination Paid" className="mx-auto mb-4 w-full rounded-2xl" />
           <p className="text-lg font-bold mb-2">
             Description:
