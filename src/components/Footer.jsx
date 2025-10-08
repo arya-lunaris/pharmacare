@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="bg-gray-100 mt-8">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+    <footer className="bg-gray-100 mt-20">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
         <p className="text-gray-700">&copy; {new Date().getFullYear()} Pharmacare. All rights reserved.</p>
         <div className="flex space-x-4 mt-2 md:mt-0">
           <a

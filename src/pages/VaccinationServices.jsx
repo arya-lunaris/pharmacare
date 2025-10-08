@@ -41,8 +41,8 @@ const VaccinationServices = () => {
             transitionDelay: '0.2s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold' }}>
-            Flu vaccination service: adults aged 18 years or over (NHS service)
+          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#00E0BD' }}>
+            Flu Vaccination Service (NHS Service)
           </h2>
           <img src="/images/vaccine.jpg" alt="Flu vaccination NHS" className="mx-auto mb-4 w-full rounded-2xl" />
           <p className="text-lg font-bold mb-2">
@@ -79,7 +79,7 @@ const VaccinationServices = () => {
             transitionDelay: '0.4s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold' }}>Flu vaccination service (Paid service)</h2>
+          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#00E0BD' }}>Flu Vaccination Service (Paid Service)</h2>
           <img src="/images/vaccine-paid.jpg" alt="Flu vaccination Paid" className="mx-auto mb-4 w-full rounded-2xl" />
           <p className="text-lg font-bold mb-2">
             Description:
@@ -95,7 +95,7 @@ const VaccinationServices = () => {
           <ul className="text-lg list-none p-0">
             <li>Available year-round subject to vaccine availability.</li>
             <li>Appointments recommended but walk-ins may be accepted.</li>
-            <li>Pricing details available at the pharmacy or on the website.</li>
+            <li>Please contact the pharmacy for pricing details.</li>
           </ul>
         </section>
       </div>

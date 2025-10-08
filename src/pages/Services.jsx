@@ -30,13 +30,14 @@ function Services() {
   return (
     <div className="p-8 flex flex-col items-center space-y-6">
       <h1
-        className={`-mt-5 text-3xl font-bold text-gray-800 transition-all duration-500 transform ${
+        className={`text-3xl font-bold text-gray-800 transition-all duration-500 transform ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
         style={{ transitionDelay: "100ms" }}
       >
         Our Services
       </h1>
+
       <div className="flex flex-wrap justify-center gap-10 mt-6 w-full max-w-5xl">
         {sections.map((section, index) => (
           <div

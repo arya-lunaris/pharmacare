@@ -22,13 +22,14 @@ function Contact() {
   return (
     <div className="p-8 flex flex-col items-center">
       <h1
-        className={`text-3xl font-bold text-gray-800 transition-all duration-700 ease-out
+        className={`mt-5 text-3xl font-bold text-gray-800 transition-all duration-700 ease-out
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[0]}ms` }}
       >
         Contact Us
       </h1>
+
       <p
         className={`mb-8 mt-4 text-gray-600 transition-all duration-700 ease-out
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
@@ -37,6 +38,7 @@ function Contact() {
       >
         We’d love to hear from you! You can reach Pharmacare at:
       </p>
+
       <div
         className={`rounded-3xl border border-[#00E0BD] p-8 mb-10 mt-4 transition-all duration-700 ease-out max-w-2xl w-full
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}

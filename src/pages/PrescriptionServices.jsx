@@ -88,7 +88,7 @@ export default function PrescriptionServices() {
               textAlign: 'center',
             }}
           >
-            <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
+            <h2 className="text-2xl font-semibold text-[#00E0BD]">{service.title}</h2>
             {service.title === 'Medical Supplies (Appliances)' && (
               <img src="/images/medical-supplies.jpg" alt="Medical Supplies" className="mx-auto -mb-4 rounded-2xl" style={{ width: '100%', maxWidth: '100%' }} />
             )}

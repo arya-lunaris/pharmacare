@@ -36,7 +36,7 @@ const ScreeningServices = () => {
           border: '2px solid #00E0BD'
         }}
       >
-        <h2 style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem' }}>
+        <h2 style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem', color: '#00E0BD' }}>
           Type 2 Diabetes Screening
         </h2>
         <img 

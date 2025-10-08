@@ -89,7 +89,7 @@ function Home() {
               backgroundImage: `url(${images[currentIndex].src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '400px',
+              height: '500px',
               transition: 'background-image 0.7s ease',
               ...getTransitionStyle(imageDelay),
             }}
@@ -104,7 +104,7 @@ function Home() {
         </div>
 
         <p
-          className="max-w-lg mx-auto mt-4 text-lg transition-opacity duration-700 ease-in-out text-white"
+          className="max-w-lg mx-auto mt-4 text-lg transition-opacity duration-700 ease-in-out text-white font-semibold"
           key={currentIndex}
           style={{
             opacity: loaded ? 1 : 0,
