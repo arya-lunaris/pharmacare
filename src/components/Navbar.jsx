@@ -19,7 +19,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `font-medium transition-colors duration-300 ${
                   isActive
-                    ? "text-[#00E0BD] no-underline"
+                    ? "text-[#00E0BD] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
@@ -31,7 +31,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `font-medium transition-colors duration-300 ${
                   isActive
-                    ? "text-[#00E0BD] no-underline"
+                    ? "text-[#00E0BD] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
@@ -43,7 +43,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `font-medium transition-colors duration-300 ${
                   isActive
-                    ? "text-[#00E0BD] no-underline"
+                    ? "text-[#00E0BD] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
@@ -55,7 +55,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `font-medium transition-colors duration-300 ${
                   isActive
-                    ? "text-[#00E0BD] no-underline"
+                    ? "text-[#00E0BD] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
@@ -67,7 +67,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `font-medium transition-colors duration-300 ${
                   isActive
-                    ? "text-[#00E0BD] no-underline"
+                    ? "text-[#00E0BD] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }

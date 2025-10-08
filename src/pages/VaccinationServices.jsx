@@ -7,22 +7,38 @@ const VaccinationServices = () => {
     setLoaded(true);
   }, []);
 
+  const baseTransition = 'opacity 0.6s ease, transform 0.6s ease';
+
   return (
     <div className="service-page" style={{ textAlign: 'center', padding: '2rem' }}>
-      <h1 className={`text-3xl font-bold text-gray-800 ${loaded ? 'rise-and-fade' : ''}`} style={{ marginBottom: '2rem' }}>
+      <h1
+        className="text-3xl font-bold text-gray-800"
+        style={{
+          marginBottom: '2rem',
+          opacity: loaded ? 1 : 0,
+          transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+          transition: baseTransition,
+          transitionDelay: '0s',
+        }}
+      >
         Vaccination Services
       </h1>
 
       <div className="flex flex-wrap justify-center gap-6 mt-20">
         <section
-          className={`service-section ${loaded ? 'rise-and-fade' : ''}`}
+          className="service-section"
           style={{
-            backgroundColor: '#00E0BD',
-            color: 'white',
+            backgroundColor: 'white',
+            color: 'black',
+            border: '2px solid #00E0BD',
             borderRadius: '2rem',
             padding: '2rem',
             maxWidth: '600px',
             textAlign: 'center',
+            opacity: loaded ? 1 : 0,
+            transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+            transition: baseTransition,
+            transitionDelay: '0.2s',
           }}
         >
           <h2 className="text-lg" style={{ marginBottom: '1rem' }}>
@@ -47,14 +63,19 @@ const VaccinationServices = () => {
         </section>
 
         <section
-          className={`service-section ${loaded ? 'rise-and-fade' : ''}`}
+          className="service-section"
           style={{
-            backgroundColor: '#00E0BD',
-            color: 'white',
+            backgroundColor: 'white',
+            color: 'black',
+            border: '2px solid #00E0BD',
             borderRadius: '2rem',
             padding: '2rem',
             maxWidth: '600px',
             textAlign: 'center',
+            opacity: loaded ? 1 : 0,
+            transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+            transition: baseTransition,
+            transitionDelay: '0.4s',
           }}
         >
           <h2 className="text-lg" style={{ marginBottom: '1rem' }}>Flu vaccination service (Paid service)</h2>

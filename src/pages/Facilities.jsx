@@ -13,7 +13,7 @@ function Facilities() {
         className={`mb-16 text-4xl font-bold text-gray-800 transition-all duration-700 ease-out transform ${
           loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
-        style={{ transitionDelay: '150ms' }}
+        style={{ transitionDelay: '100ms' }}
       >
         Facilities
       </h1>
@@ -23,7 +23,7 @@ function Facilities() {
           className={`p-10 rounded-3xl bg-[#00E0BD] text-white text-xl transition-all duration-700 ease-out transform ${
             loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
-          style={{ transitionDelay: '150ms' }}
+          style={{ transitionDelay: '200ms' }}
         >
           <h2 className="text-3xl font-semibold mb-4">Accessibility</h2>
           <ul className="space-y-5 list-none">

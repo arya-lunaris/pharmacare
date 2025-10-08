@@ -22,8 +22,8 @@ const ScreeningServices = () => {
       </h1>
       <div
         style={{
-          backgroundColor: '#00E0BD',
-          color: '#fff',
+          backgroundColor: 'white',
+          color: 'black',
           borderRadius: '2rem',
           maxWidth: '600px',
           margin: '0 auto',
@@ -32,7 +32,8 @@ const ScreeningServices = () => {
           transform: loaded ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.6s ease, transform 0.6s ease',
           transitionDelay: '0.3s',
-          textAlign: 'center'
+          textAlign: 'center',
+          border: '2px solid #00E0BD'
         }}
       >
         <h2 style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem' }}>

@@ -30,7 +30,7 @@ function Services() {
   return (
     <div className="p-8 flex flex-col items-center space-y-6">
       <h1
-        className={`text-3xl font-bold text-gray-800 transition-all duration-500 transform ${
+        className={`-mt-5 text-3xl font-bold text-gray-800 transition-all duration-500 transform ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
         style={{ transitionDelay: "100ms" }}
@@ -41,7 +41,7 @@ function Services() {
         {sections.map((section, index) => (
           <div
             key={section.title}
-            className={`bg-[#00E0BD] text-white rounded-3xl p-8 flex flex-col justify-between items-center w-80 transition-all duration-500 transform ${
+            className={`bg-[#00E0BD] text-white rounded-3xl p-8 flex flex-col justify-between items-center w-85 transition-all duration-500 transform ${
               loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
             style={{ transitionDelay: `${300 + index * 100}ms` }}

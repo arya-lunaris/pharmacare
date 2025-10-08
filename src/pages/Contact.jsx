@@ -38,7 +38,7 @@ function Contact() {
         We’d love to hear from you! You can reach Pharmacare at:
       </p>
       <div
-        className={`rounded-3xl border border-[#00E0BD] p-8 mb-10 mt-4 transition-all duration-700 ease-out
+        className={`rounded-3xl border border-[#00E0BD] p-8 mb-10 mt-4 transition-all duration-700 ease-out max-w-2xl w-full
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[2]}ms` }}
@@ -59,7 +59,7 @@ function Contact() {
             `}
             style={{ transitionDelay: `${delays[4]}ms` }}
           >
-            <img src="/images/email.png" alt="Email icon" className="w-10 h-10" />
+            <img src="/images/email.png" alt="Email icon" className="w-10 h-10 mr-3" />
             <a href="mailto:info@pharmacare.com" className="text-blue-600 underline">pharmacarepharmacy@outlook.com</a>
           </li>
           <li
@@ -74,30 +74,30 @@ function Contact() {
         </ul>
       </div>
       <div
-        className={`mb-6 mt-6 transition-all duration-700 ease-out
+        className={`mb-6 mt-6 transition-all duration-700 ease-out w-full max-w-2xl mx-auto
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[6]}ms` }}
       >
-        <table className="border-collapse rounded-3xl bg-[#00E0BD] text-white mx-auto w-full max-w-md text-xl">
+        <table className="border-collapse rounded-3xl bg-[#00E0BD] text-white w-full text-xl">
           <thead>
             <tr>
-              <th className="px-6 py-4 text-left rounded-3xl font-semibold text-xl">Day</th>
-              <th className="px-6 py-4 text-left rounded-3xl font-semibold text-xl">Opening Times</th>
+              <th className="px-6 py-5 text-center rounded-3xl font-semibold text-xl">Day</th>
+              <th className="px-6 py-5 text-center rounded-3xl font-semibold text-xl">Opening Times</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="px-6 py-4 rounded-3xl text-xl">Monday - Friday</td>
-              <td className="px-6 py-4 rounded-3xl text-xl">9:00 AM - 6:00 PM</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">Monday - Friday</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">9:00 AM - 6:00 PM</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 rounded-3xl text-xl">Saturday</td>
-              <td className="px-6 py-4 rounded-3xl text-xl">9:00 AM - 1:00 PM</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">Saturday</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">9:00 AM - 1:00 PM</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 rounded-3xl text-xl">Sunday</td>
-              <td className="px-6 py-4 rounded-3xl text-xl">Closed</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">Sunday</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">Closed</td>
             </tr>
           </tbody>
         </table>

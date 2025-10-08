@@ -60,7 +60,7 @@ export default function PrescriptionServices() {
         textAlign: 'center',
       }}
     >
-      <h1 className="text-3xl font-bold text-gray-800 mb-5" style={{
+      <h1 className="text-3xl font-bold text-gray-800 mb-15" style={{
         opacity: loaded ? 1 : 0,
         transform: loaded ? 'translateY(0)' : 'translateY(20px)',
         transition: 'opacity 0.6s ease, transform 0.6s ease',
@@ -77,18 +77,19 @@ export default function PrescriptionServices() {
           <section
             key={service.title}
             style={{
-              backgroundColor: '#00E0BD',
-              color: 'white',
+              backgroundColor: 'white',
+              color: 'black',
+              border: '2px solid #00E0BD',
               borderRadius: '2rem',
               padding: '1.5rem 2rem',
               opacity: loaded ? 1 : 0,
               transform: loaded ? 'translateY(0)' : 'translateY(20px)',
-              transition: `opacity 0.6s ease ${index * 0.2}s, transform 0.6s ease ${index * 0.2}s`,
+              transition: `opacity 0.6s ease ${0.2 + index * 0.2}s, transform 0.6s ease ${0.2 + index * 0.2}s`,
               textAlign: 'center',
             }}
           >
-            <h2 className="text-2xl font-semibold text-white">{service.title}</h2>
-            <p className="text-lg text-white" style={{ margin: '0.75rem 0 1.5rem' }}>{service.description}</p>
+            <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
+            <p className="text-lg" style={{ margin: '0.75rem 0 1.5rem' }}>{service.description}</p>
             <ul style={{ listStyleType: 'disc', paddingLeft: '1.25rem', textAlign: 'left', maxWidth: 600, margin: '0 auto', display: 'inline-block' }}>
               {service.details.map((detail) => (
                 <li key={detail} style={{ marginBottom: '0.4rem' }}>{detail}</li>
