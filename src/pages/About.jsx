@@ -17,7 +17,7 @@ function About() {
   return (
     <div className="p-8 flex flex-col items-center text-center space-y-16">
       <h1
-        className="text-4xl font-bold text-gray-800 mb-10"
+        className="text-4xl font-bold text-gray-800 mb-15"
         style={getTransitionStyle(200)}
       >
         About Pharmacare
