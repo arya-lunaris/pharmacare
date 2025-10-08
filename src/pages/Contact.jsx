@@ -22,7 +22,7 @@ function Contact() {
   return (
     <div className="p-8 flex flex-col items-center">
       <h1
-        className={`mt-5 text-3xl font-bold text-gray-800 transition-all duration-700 ease-out
+        className={`mt-5 text-4xl font-bold text-gray-800 transition-all duration-700 ease-out
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[0]}ms` }}

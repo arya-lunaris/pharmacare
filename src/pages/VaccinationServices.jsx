@@ -12,7 +12,7 @@ const VaccinationServices = () => {
   return (
     <div className="service-page" style={{ textAlign: 'center', padding: '2rem' }}>
       <h1
-        className="text-3xl font-bold text-gray-800"
+        className="text-4xl font-bold text-gray-800"
         style={{
           marginBottom: '2rem',
           opacity: loaded ? 1 : 0,

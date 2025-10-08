@@ -24,7 +24,7 @@ function About() {
       </h1>
 
       {/* Introduction / Overview */}
-      <section className="max-w-3xl border border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(300)}>
+      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(300)}>
         <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Who We Are</h2>
         <img src="/images/who.jpg" alt="Who We Are" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg">
@@ -34,7 +34,7 @@ function About() {
       </section>
 
       {/* Mission & Values */}
-      <section className="max-w-3xl border border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(400)}>
+      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(400)}>
         <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Our Mission & Values</h2>
         <img src="/images/mission.jpg" alt="Mission and Values" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg">
@@ -45,7 +45,7 @@ function About() {
       </section>
 
       {/* Meet the Team */}
-      <section className="max-w-3xl border border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(500)}>
+      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(500)}>
         <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Meet the Team</h2>
         <img src="/images/team.jpg" alt="Our Team" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg mb-4">
@@ -55,7 +55,7 @@ function About() {
       </section>
 
       {/* Community Commitment */}
-      <section className="max-w-3xl border border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(600)}>
+      <section className="max-w-3xl border-2 border-[#00E0BD] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(600)}>
         <h2 className="text-2xl font-semibold text-[#00E0BD] mb-4">Our Community</h2>
         <img src="/images/community.jpg" alt="Our Community" className="mx-auto mb-6 w-3/4 rounded-2xl" />
         <p className="text-gray-700 text-lg">

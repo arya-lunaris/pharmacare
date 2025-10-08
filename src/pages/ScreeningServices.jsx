@@ -10,7 +10,7 @@ const ScreeningServices = () => {
   return (
     <div style={{ textAlign: 'center', padding: '2rem' }}>
       <h1
-        className="text-3xl font-bold text-gray-800 mb-15"
+        className="text-4xl font-bold text-gray-800 mb-15"
         style={{
           opacity: loaded ? 1 : 0,
           transform: loaded ? 'translateY(0)' : 'translateY(20px)',
