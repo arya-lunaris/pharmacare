@@ -68,7 +68,7 @@ export default function PrescriptionServices() {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gridTemplateColumns: '1fr',
           gap: '1.5rem',
           textAlign: 'center',
         }}
@@ -89,6 +89,18 @@ export default function PrescriptionServices() {
             }}
           >
             <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
+            {service.title === 'Medical Supplies (Appliances)' && (
+              <img src="/images/medical-supplies.jpg" alt="Medical Supplies" className="mx-auto -mb-4 rounded-2xl" style={{ width: '100%', maxWidth: '100%' }} />
+            )}
+            {service.title === 'New Medicine Service' && (
+              <img src="/images/medical-service.jpg" alt="New Medicine Service" className="mx-auto rounded-2xl" style={{ width: '100%', maxWidth: '100%' }} />
+            )}
+            {service.title === 'Prescription Delivery Service' && (
+              <img src="/images/prescriptions.jpg" alt="Prescription Delivery Service" className="mx-auto rounded-2xl" style={{ width: '100%', maxWidth: '100%' }} />
+            )}
+            {service.title === 'Stoma Bag Support Service' && (
+              <img src="/images/stoma.jpg" alt="Stoma Bag Support Service" className="mx-auto -mb-10 rounded-2xl" style={{ width: '100%', maxWidth: '100%' }} />
+            )}
             <p className="text-lg" style={{ margin: '0.75rem 0 1.5rem' }}>{service.description}</p>
             <ul style={{ listStyleType: 'disc', paddingLeft: '1.25rem', textAlign: 'left', maxWidth: 600, margin: '0 auto', display: 'inline-block' }}>
               {service.details.map((detail) => (

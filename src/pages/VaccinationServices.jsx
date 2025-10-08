@@ -24,7 +24,7 @@ const VaccinationServices = () => {
         Vaccination Services
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-6 mt-20">
+      <div className="flex flex-wrap justify-center gap-6 mt-15">
         <section
           className="service-section"
           style={{
@@ -41,9 +41,10 @@ const VaccinationServices = () => {
             transitionDelay: '0.2s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem' }}>
+          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold' }}>
             Flu vaccination service: adults aged 18 years or over (NHS service)
           </h2>
+          <img src="/images/vaccine.jpg" alt="Flu vaccination NHS" className="mx-auto mb-4 w-full rounded-2xl" />
           <p className="text-lg font-bold mb-2">
             Description:
           </p>
@@ -78,7 +79,8 @@ const VaccinationServices = () => {
             transitionDelay: '0.4s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem' }}>Flu vaccination service (Paid service)</h2>
+          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold' }}>Flu vaccination service (Paid service)</h2>
+          <img src="/images/vaccine-paid.jpg" alt="Flu vaccination Paid" className="mx-auto mb-4 w-full rounded-2xl" />
           <p className="text-lg font-bold mb-2">
             Description:
           </p>
