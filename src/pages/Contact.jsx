@@ -38,14 +38,14 @@ function Contact() {
         We’d love to hear from you! You can reach Pharmacare at:
       </p>
       <div
-        className={`rounded-3xl border border-[#00E0BD] p-6 mb-8 mt-4 transition-all duration-700 ease-out
+        className={`rounded-3xl border border-[#00E0BD] p-8 mb-10 mt-4 transition-all duration-700 ease-out
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[2]}ms` }}
       >
         <ul className="text-gray-700 space-y-6 flex flex-col items-center">
           <li
-            className={`transition-all duration-700 ease-out flex items-center space-x-2
+            className={`transition-all duration-700 ease-out flex items-center space-x-2 text-lg
               ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
             `}
             style={{ transitionDelay: `${delays[3]}ms` }}
@@ -54,7 +54,7 @@ function Contact() {
             <span>The Crown, West Bromwich Street, Walsall, WS1 4BP</span>
           </li>
           <li
-            className={`transition-all duration-700 ease-out flex items-center space-x-2
+            className={`transition-all duration-700 ease-out flex items-center space-x-2 text-lg
               ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
             `}
             style={{ transitionDelay: `${delays[4]}ms` }}
@@ -63,7 +63,7 @@ function Contact() {
             <a href="mailto:info@pharmacare.com" className="text-blue-600 underline">pharmacarepharmacy@outlook.com</a>
           </li>
           <li
-            className={`transition-all duration-700 ease-out flex items-center space-x-2
+            className={`transition-all duration-700 ease-out flex items-center space-x-2 text-lg
               ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
             `}
             style={{ transitionDelay: `${delays[5]}ms` }}
@@ -79,7 +79,7 @@ function Contact() {
         `}
         style={{ transitionDelay: `${delays[6]}ms` }}
       >
-        <table className="border-collapse rounded-3xl bg-[#00E0BD] text-white mx-auto w-full max-w-md text-lg">
+        <table className="border-collapse rounded-3xl bg-[#00E0BD] text-white mx-auto w-full max-w-md text-xl">
           <thead>
             <tr>
               <th className="px-6 py-4 text-left rounded-3xl font-semibold text-xl">Day</th>
@@ -88,16 +88,16 @@ function Contact() {
           </thead>
           <tbody>
             <tr>
-              <td className="px-6 py-4 rounded-3xl">Monday - Friday</td>
-              <td className="px-6 py-4 rounded-3xl">9:00 AM - 6:00 PM</td>
+              <td className="px-6 py-4 rounded-3xl text-xl">Monday - Friday</td>
+              <td className="px-6 py-4 rounded-3xl text-xl">9:00 AM - 6:00 PM</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 rounded-3xl">Saturday</td>
-              <td className="px-6 py-4 rounded-3xl">9:00 AM - 1:00 PM</td>
+              <td className="px-6 py-4 rounded-3xl text-xl">Saturday</td>
+              <td className="px-6 py-4 rounded-3xl text-xl">9:00 AM - 1:00 PM</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 rounded-3xl">Sunday</td>
-              <td className="px-6 py-4 rounded-3xl">Closed</td>
+              <td className="px-6 py-4 rounded-3xl text-xl">Sunday</td>
+              <td className="px-6 py-4 rounded-3xl text-xl">Closed</td>
             </tr>
           </tbody>
         </table>

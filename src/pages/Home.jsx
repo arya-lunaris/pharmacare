@@ -79,7 +79,7 @@ function Home() {
           <button
             onClick={prevSlide}
             aria-label="Previous Slide"
-            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-60 transition-colors mr-4 cursor-pointer"
+            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-white/50 hover:backdrop-blur-lg transition-colors mr-4 cursor-pointer"
           >
             &#8592;
           </button>
@@ -97,7 +97,7 @@ function Home() {
           <button
             onClick={nextSlide}
             aria-label="Next Slide"
-            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-60 transition-colors ml-4 cursor-pointer"
+            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-white/50 hover:backdrop-blur-lg transition-colors ml-4 cursor-pointer"
           >
             &#8594;
           </button>
@@ -119,7 +119,7 @@ function Home() {
 
       <button
         onClick={() => navigate('/about')}
-        className="px-6 py-3 bg-[#00E0BD] text-white font-medium rounded-full hover:bg-teal-400 transition-colors cursor-pointer"
+        className="px-6 py-3 bg-[#00E0BD] text-white font-medium rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#00E0BD] hover:ring-offset-2 hover:ring-offset-white"
         style={getTransitionStyle(buttonDelay)}
       >
         Learn More
