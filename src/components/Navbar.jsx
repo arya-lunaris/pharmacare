@@ -4,14 +4,14 @@ function Navbar() {
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center h-20">
+        <div className="flex items-center h-30">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-gray-800">
               <img
                 src="/images/pharmacare-logo.png"
                 alt="Pharmacare Logo"
-                className="h-13 w-auto"
+                className="h-16 w-auto -mt-2"
               />
             </Link>
           </div>

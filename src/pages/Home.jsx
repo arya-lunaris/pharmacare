@@ -89,7 +89,7 @@ function Home() {
               backgroundImage: `url(${images[currentIndex].src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '500px',
+              height: '400px',
               transition: 'background-image 0.7s ease',
               ...getTransitionStyle(imageDelay),
             }}
