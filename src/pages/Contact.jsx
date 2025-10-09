@@ -91,11 +91,11 @@ function Contact() {
           <tbody>
             <tr>
               <td className="px-6 py-5 text-center rounded-3xl text-xl">Monday - Friday</td>
-              <td className="px-6 py-5 text-center rounded-3xl text-xl">9:00 AM - 6:00 PM</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">9:00 AM - 6:30 PM</td>
             </tr>
             <tr>
               <td className="px-6 py-5 text-center rounded-3xl text-xl">Saturday</td>
-              <td className="px-6 py-5 text-center rounded-3xl text-xl">9:00 AM - 1:00 PM</td>
+              <td className="px-6 py-5 text-center rounded-3xl text-xl">9:00 AM - 5:30 PM</td>
             </tr>
             <tr>
               <td className="px-6 py-5 text-center rounded-3xl text-xl">Sunday</td>
