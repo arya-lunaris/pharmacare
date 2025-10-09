@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <footer className="bg-gray-100 mt-30">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between py-4">
-        <p className="text-gray-700 text-sm">&copy; 2025 Pharmacare. All rights reserved.</p>
-        <div className="flex justify-center space-x-6">
+    <footer className="bg-[#E3DFEC] mt-30">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between py-4 relative">
+        <p className="text-gray-700 text-base">&copy; 2025 Pharmacare. All rights reserved.</p>
+        <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-6">
           <img src="/images/registered.png" alt="Registered Pharmacy" className="h-8 object-contain" />
           <img src="/images/npa.png" alt="NPA Member" className="h-7 object-contain" />
           <img src="/images/nhs.png" alt="NHS Partner" className="h-7 object-contain" />
