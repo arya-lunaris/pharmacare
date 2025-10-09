@@ -23,45 +23,64 @@ function About() {
         About Pharmacare
       </h1>
 
-      {/* Introduction / Overview */}
+      {/* Reliable Deliveries */}
       <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(300)}>
-        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Who We Are</h2>
-        <img src="/images/who.jpg" alt="Who We Are" className="mx-auto mb-6 w-3/4 rounded-2xl" />
+        <img src={`/images/delivery.jpg`} alt="Reliable medication delivery" className="w-100 h-80 object-contain rounded-3xl mb-4 mx-auto" />
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Prompt Medication Delivery</h2>
         <p className="text-gray-700 text-lg">
-          Pharmacare is your trusted local pharmacy, proudly serving the community with care and professionalism.
-          Whether you need prescriptions, health advice, or everyday wellness products, our team is always here to help.
+          Our in-house delivery team ensures every prescription arrives safely and on time — including urgent and same-day requests. 
+          With reliable logistics and care, your residents never go without essential medication.
         </p>
       </section>
 
-      {/* Mission & Values */}
+      {/* Bespoke Medication Dispensing */}
       <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(400)}>
-        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Our Mission & Values</h2>
-        <img src="/images/mission.jpg" alt="Mission and Values" className="mx-auto mb-6 w-3/4 rounded-2xl" />
+        <img src={`/images/dispensing.jpg`} alt="Tailored medication dispensing" className="w-90 h-72 object-contain rounded-3xl mb-4 mx-auto" />
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Tailored Dispensing Solutions</h2>
         <p className="text-gray-700 text-lg">
-          Our mission is simple — to deliver quality healthcare that’s personal, accessible, and compassionate.
-          We believe in integrity, respect, and community care. Every customer who walks through our doors
-          deserves to feel valued and supported.
+          We provide accurate and dependable dispensing services designed around the individual needs of each resident. 
+          From new prescriptions to repeat supplies, every order is handled with precision, care, and confidentiality.
         </p>
       </section>
 
-      {/* Meet the Team */}
+      {/* Professional Guidance & Support */}
       <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(500)}>
-        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Meet the Team</h2>
-        <img src="/images/team.jpg" alt="Our Team" className="mx-auto mb-6 w-3/4 rounded-2xl" />
-        <p className="text-gray-700 text-lg mb-4">
-          Our friendly pharmacists and staff have years of experience in healthcare and patient support.
-          From expert advice to quick prescriptions, we’re committed to ensuring your well-being.
+        <img src={`/images/pharmacists.jpg`} alt="Professional pharmacist guidance" className="w-100 h-72 object-contain rounded-3xl mb-4 mx-auto rounded-md" />
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Pharmacist Expertise When You Need It</h2>
+        <p className="text-gray-700 text-lg">
+          Our pharmacists are always available to review medications, offer professional advice, 
+          and assist care staff with urgent or out-of-hours queries. 
+          We’re here to help maintain safe, effective medicine use at all times.
         </p>
       </section>
 
-      {/* Community Commitment */}
+      {/* Care Staff Training */}
       <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(600)}>
-        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Our Community</h2>
-        <img src="/images/community.jpg" alt="Our Community" className="mx-auto mb-6 w-3/4 rounded-2xl" />
+        <img src={`/images/team.jpg`} alt="Care staff training session" className="w-110 h-80 object-contain rounded-3xl mb-4 mx-auto" />
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Specialised Training for Care Teams</h2>
         <p className="text-gray-700 text-lg">
-          We’re more than just a pharmacy — we’re part of the community. 
-          Pharmacare supports local initiatives, health awareness events, and charity programs 
-          to make a positive difference in people’s lives.
+          Our pharmacist-led training sessions help care staff gain confidence in medicine administration and handling. 
+          Each session is tailored to your setting, ensuring your team meets all current safety and regulatory standards.
+        </p>
+      </section>
+
+      {/* Complementary Audits */}
+      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(700)}>
+        <img src={`/images/review.jpg`} alt="Medication management review" className="w-100 h-80 object-contain rounded-3xl mb-4 mx-auto" />
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Medication Management Reviews</h2>
+        <p className="text-gray-700 text-lg">
+          Our pharmacist-led audits assess medication management procedures, identify risks, and ensure CQC compliance. 
+          With our guidance, your care home can maintain safe, efficient, and compliant practices.
+        </p>
+      </section>
+
+      {/* Vaccination Services */}
+      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(800)}>
+        <img src={`/images/vaccinations.jpg`} alt="On-site vaccination clinics" className="w-72 h-72 object-contain rounded-3xl mb-4 mx-auto" />
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">On-Site Vaccination Clinics</h2>
+        <p className="text-gray-700 text-lg">
+          We provide convenient, pharmacist-administered vaccination services directly at your care home. 
+          Residents can receive vaccinations in a safe, comfortable environment without the need for travel.
         </p>
       </section>
     </div>

@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="bg-[#E3DFEC] mt-30">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between py-4 relative">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between py-6 relative">
         <p className="text-gray-700 text-base">&copy; 2025 Pharmacare. All rights reserved.</p>
         <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-6">
           <img src="/images/registered.png" alt="Registered Pharmacy" className="h-8 object-contain" />
