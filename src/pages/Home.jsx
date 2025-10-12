@@ -13,7 +13,6 @@ function Home() {
 
   const headingDelay = 0;
   const paragraphDelay = 150;
-  const imageDelay = 300;
   const buttonDelay = 450;
 
   const getTransitionStyle = (delay) => ({
@@ -59,7 +58,7 @@ function Home() {
         Welcome to Pharmacare
       </h1>
       <p
-        className="text-gray-600 max-w-2xl mx-auto mb-10"
+        className="text-gray-600 max-w-2xl mx-auto mb-15"
         style={getTransitionStyle(paragraphDelay)}
       >
         Your trusted local pharmacy for prescriptions, health advice, and wellness services. 
@@ -83,17 +82,22 @@ function Home() {
           >
             &#8592;
           </button>
-          <div
-            className="rounded-3xl shadow-md overflow-hidden flex-1"
-            style={{
-              backgroundImage: `url(${images[currentIndex].src})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '400px',
-              transition: 'background-image 0.7s ease',
-              ...getTransitionStyle(imageDelay),
-            }}
-          />
+          <div className="flex-1 relative h-[400px] overflow-hidden rounded-3xl shadow-md">
+            {images.map((img, i) => (
+              <div
+                key={i}
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: `url(${img.src})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: i === currentIndex ? 1 : 0,
+                  transform: i === currentIndex ? 'translateX(0)' : 'translateX(40px)',
+                  transition: 'opacity 400ms ease, transform 400ms cubic-bezier(0.4,0,0.2,1)',
+                }}
+              />
+            ))}
+          </div>
           <button
             onClick={nextSlide}
             aria-label="Next Slide"
@@ -115,6 +119,19 @@ function Home() {
         >
           {images[currentIndex].text}
         </p>
+        <div className="flex justify-center mt-6 space-x-3">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentIndex(i)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                i === currentIndex
+                  ? 'bg-white scale-125'
+                  : 'bg-white/50 hover:bg-white/80'
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
       <button
