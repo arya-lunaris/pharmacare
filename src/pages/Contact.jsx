@@ -104,6 +104,43 @@ function Contact() {
           </tbody>
         </table>
       </div>
+      <div
+        className={`rounded-3xl border border-[#A996CA] p-8 mb-10 mt-10 transition-all duration-700 ease-out max-w-2xl w-full
+          ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
+        `}
+        style={{ transitionDelay: `${delays[7]}ms` }}
+      >
+        <h2 className="text-2xl font-bold text-[#5C427D] mb-4 text-center">Contact Our Team</h2>
+        <p className="mb-6 text-gray-700 text-center">
+          Fill out this form and our specialist team will contact you as soon as possible.
+        </p>
+        <form className="flex flex-col space-y-4">
+          <div className="flex flex-col">
+            <label className="mb-1 text-gray-700 font-semibold">Full Name *</label>
+            <input type="text" placeholder="Your full name" className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#A996CA]" />
+          </div>
+          <div className="flex flex-col">
+            <label className="mb-1 text-gray-700 font-semibold">Email Address *</label>
+            <input type="email" placeholder="your@email.com" className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#A996CA]" />
+          </div>
+          <div className="flex flex-col">
+            <label className="mb-1 text-gray-700 font-semibold">Phone Number *</label>
+            <input type="tel" placeholder="020 1234 5678" className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#A996CA]" />
+          </div>
+          <div className="flex flex-col">
+            <label className="mb-1 text-gray-700 font-semibold">Organisation Name</label>
+            <input type="text" placeholder="Your organisation name" className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#A996CA]" />
+          </div>
+          <div className="flex flex-col">
+            <label className="mb-1 text-gray-700 font-semibold">Message *</label>
+            <textarea placeholder="Tell us about your pharmacy needs..." className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#A996CA]" rows={5}></textarea>
+          </div>
+          <button type="submit" className="bg-[#A996CA] text-white font-medium px-6 py-3 rounded-full hover:bg-[#5C427D] transition-colors mt-2">
+            Send Message
+          </button>
+          <p className="text-gray-500 text-sm mt-2">* Required fields. We'll never share your information with third parties.</p>
+        </form>
+      </div>
     </div>
   );
 }
