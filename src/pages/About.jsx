@@ -26,10 +26,10 @@ function About() {
       {/* Reliable Deliveries */}
       <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(300)}>
         <img src={`/images/delivery.jpg`} alt="Reliable medication delivery" className="w-100 h-80 object-contain rounded-3xl mb-4 mx-auto" />
-        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Prompt Medication Delivery</h2>
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Prompt & Free Same-Day Medication Delivery</h2>
         <p className="text-gray-700 text-lg">
-          Our in-house delivery team ensures every prescription arrives safely and on time — including urgent and same-day requests. 
-          With reliable logistics and care, your residents never go without essential medication.
+          Our in-house delivery team ensures every prescription arrives safely and on time — including urgent and same-day acute medications, completely free of charge. 
+          We understand the importance of quick, reliable service, so patients and care homes can count on us for prompt delivery every time.
         </p>
       </section>
 
@@ -67,20 +67,35 @@ function About() {
       {/* Complementary Audits */}
       <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(700)}>
         <img src={`/images/review.jpg`} alt="Medication management review" className="w-100 h-80 object-contain rounded-3xl mb-4 mx-auto" />
-        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Medication Management Reviews</h2>
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Free Medication Audits for Care Homes</h2>
         <p className="text-gray-700 text-lg">
-          Our pharmacist-led audits assess medication management procedures, identify risks, and ensure CQC compliance. 
-          With our guidance, your care home can maintain safe, efficient, and compliant practices.
+          We offer <strong>free, pharmacist-led medication audits</strong> for nursing and care homes. 
+          Our audits assess medication management procedures, identify risks, and ensure CQC compliance. 
+          With our support, care homes can maintain safe, effective, and compliant practices while improving overall medication safety.
         </p>
       </section>
 
       {/* Vaccination Services */}
       <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(800)}>
         <img src={`/images/vaccinations.jpg`} alt="On-site vaccination clinics" className="w-72 h-72 object-contain rounded-3xl mb-4 mx-auto" />
-        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">On-Site Vaccination Clinics</h2>
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Flu & COVID Vaccination Services</h2>
         <p className="text-gray-700 text-lg">
-          We provide convenient, pharmacist-administered vaccination services directly at your care home. 
-          Residents can receive vaccinations in a safe, comfortable environment without the need for travel.
+          Our pharmacy offers <strong>flu and COVID-19 vaccinations</strong>, administered by qualified pharmacists in a safe and comfortable setting. 
+          Whether in-store or as part of our on-site vaccination clinics, we make it easy for patients and residents to stay protected and up to date.
+        </p>
+      </section>
+
+      {/* Pharmacy First Service */}
+      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(900)}>
+        <img
+          src={`/images/pharmacyfirst.jpg`}
+          alt="Pharmacy First Service"
+          className="w-80 mx-auto rounded-3xl m-5 mb-8"
+        />
+        <h2 className="text-2xl font-semibold text-[#5C427D] mb-4">Pharmacy First Service</h2>
+        <p className="text-gray-700 text-lg">
+          Our <strong>Pharmacy First Service</strong> allows patients to access treatment for common conditions directly from our pharmacists — without the need to visit a GP. 
+          We can assess, advise, and prescribe medication where appropriate, helping you get fast and effective care right from your local pharmacy.
         </p>
       </section>
     </div>
