@@ -40,7 +40,7 @@ function Home() {
       text: "Seasonal flu and COVID-19 vaccinations available"
     },
     {
-      src: "/images/pharmacyfirst.jpg",
+      src: "/images/pharmacy-first.jpg",
       alt: "Pharmacy First consultation service",
       text: "Pharmacy First service provided"
     }
@@ -87,7 +87,7 @@ function Home() {
           >
             &#8592;
           </button>
-          <div className="flex-1 relative h-[350px] overflow-hidden rounded-3xl shadow-md">
+          <div className="flex-1 relative h-[400px] overflow-hidden rounded-3xl shadow-md">
             {images.map((img, i) => (
               <div
                 key={i}
