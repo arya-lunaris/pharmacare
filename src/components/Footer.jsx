@@ -26,7 +26,7 @@ function Footer() {
 
         <div className="flex-1 flex flex-col items-center space-y-4">
           {/* Contact Information */}
-          <h2 className="text-xl font-normal text-[#5C427D] mb-7">Contact Information:</h2>
+          <h2 className="text-xl font-normal text-[#5C427D] mb-7">Contact information:</h2>
           <div className="flex flex-col items-center space-y-6">
             <div className="flex items-center space-x-3 text-lg">
               <img src="/images/address.png" alt="Address icon" className="h-6 w-6" />
@@ -48,7 +48,7 @@ function Footer() {
             </div>
           </div>
           <div className="mt-10 text-center text-[14px]">
-            <p className="text-gray-700">&copy; 2025 Pharmacare. All rights reserved.</p>
+            <p className="text-gray-700">&copy; 2025 PharmaCare. All rights reserved.</p>
             <p className="text-gray-700">GPhC Premises Reg No: 9011289</p>
             <p className="text-gray-700">Superintendent Pharmacist: Balbir Ram</p>
           </div>

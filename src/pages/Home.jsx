@@ -60,14 +60,14 @@ function Home() {
         className="text-5xl font-normal text-[#5C427D] mb-5"
         style={getTransitionStyle(headingDelay)}
       >
-        Welcome to Pharmacare
+        Welcome to PharmaCare
       </h1>
       <p
         className="text-gray-600 max-w-2xl mx-auto mb-15"
         style={getTransitionStyle(paragraphDelay)}
       >
         Your trusted local pharmacy for prescriptions, health advice, and wellness services. 
-        At Pharmacare, we’re committed to providing personalized care for you and your family.
+        At PharmaCare, we’re committed to providing personalized care for you and your family.
       </p>
 
       <div

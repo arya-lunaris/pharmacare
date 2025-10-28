@@ -20,7 +20,7 @@ function About() {
         className="text-4xl font-normal text-[#5C427D] mb-15"
         style={getTransitionStyle(200)}
       >
-        About Pharmacare
+        About Us
       </h1>
 
       {/* Reliable Deliveries */}

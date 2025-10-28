@@ -36,7 +36,7 @@ function Contact() {
         `}
         style={{ transitionDelay: `${delays[1]}ms` }}
       >
-        We’d love to hear from you! You can reach Pharmacare at:
+        We’d love to hear from you! You can reach PharmaCare at:
       </p>
 
       <div
