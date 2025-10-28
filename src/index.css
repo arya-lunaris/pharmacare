@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('/fonts/museo-sans/MuseoSans-100.otf') format('opentype');
+  font-weight: 100;
+}
+
+@layer base {
+  h1, h2 {
+    font-family: 'Museo Sans', sans-serif;
+  }
+}
+
 html, body {
   overflow-x: hidden;
 }

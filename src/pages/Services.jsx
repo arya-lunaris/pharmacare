@@ -47,7 +47,7 @@ function Services() {
             }`}
             style={{ transitionDelay: `${300 + index * 100}ms` }}
           >
-            <h2 className="text-xl font-normal mb-6 text-center">{section.title}</h2>
+            <h2 className="text-2xl font-normal mb-6 text-center">{section.title}</h2>
             <img
               src={section.image}
               alt={section.title}

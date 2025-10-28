@@ -57,7 +57,7 @@ function Home() {
   return (
     <div className="p-8 text-center">
       <h1
-        className="text-4xl font-normal text-[#5C427D] mb-5"
+        className="text-5xl font-normal text-[#5C427D] mb-5"
         style={getTransitionStyle(headingDelay)}
       >
         Welcome to Pharmacare
@@ -141,8 +141,8 @@ function Home() {
 
       <button
         onClick={() => navigate('/about')}
-        className="px-6 py-3 bg-[#A996CA] text-white font-normal rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#A996CA] hover:ring-offset-2 hover:ring-offset-white"
-        style={getTransitionStyle(buttonDelay)}
+        className="px-6 py-3 bg-[#A996CA] text-white font-normal rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#A996CA] hover:ring-offset-2 hover:ring-offset-white relative"
+        style={{ ...getTransitionStyle(buttonDelay), top: '-20px' }}
       >
         Learn More
       </button>

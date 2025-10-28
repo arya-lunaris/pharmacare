@@ -21,60 +21,65 @@ function Navbar() {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `font-medium transition-colors duration-300 ${
+                `text-lg transition-colors duration-300 ${
                   isActive
                     ? "text-[#A996CA] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
+              style={{ fontFamily: 'Museo Sans, sans-serif' }}
             >
               Home
             </NavLink>
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `font-medium transition-colors duration-300 ${
+                `text-lg transition-colors duration-300 ${
                   isActive
                     ? "text-[#A996CA] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
+              style={{ fontFamily: 'Museo Sans, sans-serif' }}
             >
               About
             </NavLink>
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                `font-medium transition-colors duration-300 ${
+                `text-lg transition-colors duration-300 ${
                   isActive
                     ? "text-[#A996CA] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
+              style={{ fontFamily: 'Museo Sans, sans-serif' }}
             >
               Services
             </NavLink>
             <NavLink
               to="/facilities"
               className={({ isActive }) =>
-                `font-medium transition-colors duration-300 ${
+                `text-lg transition-colors duration-300 ${
                   isActive
                     ? "text-[#A996CA] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
+              style={{ fontFamily: 'Museo Sans, sans-serif' }}
             >
               Facilities
             </NavLink>
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `font-medium transition-colors duration-300 ${
+                `text-lg transition-colors duration-300 ${
                   isActive
                     ? "text-[#A996CA] underline"
                     : "text-gray-700 hover:underline"
                 }`
               }
+              style={{ fontFamily: 'Museo Sans, sans-serif' }}
             >
               Contact
             </NavLink>
