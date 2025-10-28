@@ -30,7 +30,7 @@ function Services() {
   return (
     <div className="p-8 flex flex-col items-center space-y-6">
       <h1
-        className={`text-4xl font-bold text-[#5C427D] transition-all duration-500 transform ${
+        className={`text-4xl font-normal text-[#5C427D] transition-all duration-500 transform ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
         style={{ transitionDelay: "100ms" }}
@@ -47,7 +47,7 @@ function Services() {
             }`}
             style={{ transitionDelay: `${300 + index * 100}ms` }}
           >
-            <h2 className="text-xl font-semibold mb-6 text-center">{section.title}</h2>
+            <h2 className="text-xl font-normal mb-6 text-center">{section.title}</h2>
             <img
               src={section.image}
               alt={section.title}

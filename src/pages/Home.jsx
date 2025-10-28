@@ -25,19 +25,24 @@ function Home() {
 
   const images = [
     {
-      src: "/images/pharmacist.jpg",
-      alt: "Pharmacist helping a customer",
-      text: "Our friendly pharmacists are here to assist you."
+      src: "/images/medical-delivery.jpg",
+      alt: "Pharmacist assisting a patient",
+      text: "Free same-day delivery for prescriptions"
     },
     {
-      src: "/images/medicine.jpg",
-      alt: "Medicine on shelves",
-      text: "Wide range of medicines and health products available."
+      src: "/images/care-home.jpg",
+      alt: "Medication and supplies on shelves",
+      text: "Free medication audits for nursing and care homes"
     },
     {
-      src: "/images/consultation.jpg",
-      alt: "Pharmacist consultation",
-      text: "Personalized consultations to ensure the best care."
+      src: "/images/vaccinating.jpg",
+      alt: "Pharmacist providing vaccination services",
+      text: "Seasonal flu and COVID-19 vaccinations available"
+    },
+    {
+      src: "/images/pharmacyfirst.jpg",
+      alt: "Pharmacy First consultation service",
+      text: "Pharmacy First service provided"
     }
   ];
 
@@ -52,7 +57,7 @@ function Home() {
   return (
     <div className="p-8 text-center">
       <h1
-        className="text-4xl font-bold text-[#5C427D] mb-5"
+        className="text-4xl font-normal text-[#5C427D] mb-5"
         style={getTransitionStyle(headingDelay)}
       >
         Welcome to Pharmacare
@@ -78,11 +83,11 @@ function Home() {
           <button
             onClick={prevSlide}
             aria-label="Previous Slide"
-            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-white/50 hover:backdrop-blur-lg transition-colors mr-4 cursor-pointer"
+            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-white/50 hover:backdrop-blur-lg transition-colors mr-10 cursor-pointer"
           >
             &#8592;
           </button>
-          <div className="flex-1 relative h-[400px] overflow-hidden rounded-3xl shadow-md">
+          <div className="flex-1 relative h-[350px] overflow-hidden rounded-3xl shadow-md">
             {images.map((img, i) => (
               <div
                 key={i}
@@ -101,14 +106,14 @@ function Home() {
           <button
             onClick={nextSlide}
             aria-label="Next Slide"
-            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-white/50 hover:backdrop-blur-lg transition-colors ml-4 cursor-pointer"
+            className="bg-white/30 backdrop-blur-md text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-white/50 hover:backdrop-blur-lg transition-colors ml-10 cursor-pointer"
           >
             &#8594;
           </button>
         </div>
 
         <p
-          className="max-w-lg mx-auto mt-4 text-lg transition-opacity duration-700 ease-in-out text-white font-semibold"
+          className="max-w-lg mx-auto mt-4 text-lg transition-opacity duration-700 ease-in-out text-white font-normal"
           key={currentIndex}
           style={{
             opacity: loaded ? 1 : 0,
@@ -124,7 +129,7 @@ function Home() {
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                 i === currentIndex
                   ? 'bg-white scale-125'
                   : 'bg-white/50 hover:bg-white/80'
@@ -136,7 +141,7 @@ function Home() {
 
       <button
         onClick={() => navigate('/about')}
-        className="px-6 py-3 bg-[#A996CA] text-white font-medium rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#A996CA] hover:ring-offset-2 hover:ring-offset-white"
+        className="px-6 py-3 bg-[#A996CA] text-white font-normal rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#A996CA] hover:ring-offset-2 hover:ring-offset-white"
         style={getTransitionStyle(buttonDelay)}
       >
         Learn More

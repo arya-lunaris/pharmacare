@@ -10,7 +10,7 @@ function Facilities() {
   return (
     <div className="py-16 flex flex-col items-center text-center">
       <h1
-        className={`mb-16 text-4xl font-bold text-[#5C427D] transition-all duration-700 ease-out transform ${
+        className={`mb-16 text-4xl font-normal text-[#5C427D] transition-all duration-700 ease-out transform ${
           loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
         style={{ transitionDelay: '100ms' }}
@@ -25,7 +25,7 @@ function Facilities() {
           }`}
           style={{ transitionDelay: '200ms' }}
         >
-          <h2 className="text-3xl font-semibold mb-4">Accessibility</h2>
+          <h2 className="text-3xl font-normal mb-4">Accessibility</h2>
           <ul className="space-y-5 list-none">
             <li><img src="/images/braille.png" alt="Braille translation service" className="inline-block w-8 h-8 mr-3 align-middle" />Braille translation service</li>
             <li><img src="/images/toilet.png" alt="Disabled toilet" className="inline-block w-8 h-8 mr-3 align-middle" />Disabled toilet</li>
@@ -44,7 +44,7 @@ function Facilities() {
             }`}
             style={{ transitionDelay: '300ms' }}
           >
-            <h2 className="text-3xl font-semibold mb-4">Parking</h2>
+            <h2 className="text-3xl font-normal mb-4">Parking</h2>
             <ul className="space-y-5 list-none">
               <li><img src="/images/parking.png" alt="Car parking" className="inline-block w-8 h-8 mr-3 align-middle" />Car parking</li>   
               <li><img src="/images/disabled-parking.png" alt="Disabled parking" className="inline-block w-8 h-8 mr-3 align-middle" />Disabled parking</li>
@@ -58,7 +58,7 @@ function Facilities() {
             }`}
             style={{ transitionDelay: '450ms' }}
           >
-            <h2 className="text-3xl font-semibold mb-4">Other facilities</h2>
+            <h2 className="text-3xl font-normal mb-4">Other facilities</h2>
             <ul className="space-y-5 list-none">
               <li><img src="/images/consultation.png" alt="Private consultation room or area" className="inline-block w-8 h-8 mr-3 align-middle" />Private consultation room or area</li>
             </ul>

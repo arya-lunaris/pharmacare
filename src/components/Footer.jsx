@@ -4,7 +4,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center space-y-12 md:space-y-0 md:gap-x-50">
         <div className="flex-1 flex flex-col items-center space-y-2">
           {/* Members of */}
-          <h2 className="text-2xl font-normal text-[#5C427D] -mb-1.5">Members of:</h2>
+          <h2 className="text-xl font-normal text-[#5C427D] -mb-1.5">Members of:</h2>
           <div className="flex flex-col items-center -space-y-6">
             <img src="/images/gphc.png" alt="GPHC" className="h-28 w-28 object-contain" />
             <img src="/images/nhs.png" alt="NHS" className="h-16 w-16 object-contain" />
@@ -15,7 +15,7 @@ function Footer() {
 
         <div className="flex-1 flex flex-col items-center space-y-2">
           {/* In partnership */}
-          <h2 className="text-2xl font-normal text-[#5C427D] -mb-5">In partnership with:</h2>
+          <h2 className="text-xl font-normal text-[#5C427D] -mb-5">In partnership with:</h2>
           <div className="flex flex-col items-center -space-y-10">
             <img src="/images/camascope.jpg" alt="Camascope" className="h-32 w-32 object-contain" />
             <img src="/images/caremeds.jpg" alt="Caremeds" className="h-24 w-24 object-contain -mb-7" />
@@ -26,23 +26,23 @@ function Footer() {
 
         <div className="flex-1 flex flex-col items-center space-y-4">
           {/* Contact Information */}
-          <h2 className="text-2xl font-normal text-[#5C427D] mb-7">Contact Information:</h2>
+          <h2 className="text-xl font-normal text-[#5C427D] mb-7">Contact Information:</h2>
           <div className="flex flex-col items-center space-y-6">
             <div className="flex items-center space-x-3 text-lg">
               <img src="/images/address.png" alt="Address icon" className="h-6 w-6" />
-              <a href="https://www.google.com/maps/place/THE+CROWN,+WEST+BROMWICH+STREET,+WALSALL,+WS1+4BP" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-lg hover:text-[#5C427D] transition-colors duration-300">
+              <a href="https://www.google.com/maps/place/THE+CROWN,+WEST+BROMWICH+STREET,+WALSALL,+WS1+4BP" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-sm hover:text-[#5C427D] transition-colors duration-300">
                 Address
               </a>
             </div>
             <div className="flex items-center space-x-3 text-lg">
               <img src="/images/email.png" alt="Email icon" className="h-6 w-6" />
-              <a href="mailto:pharmacarepharmacy@outlook.com" className="text-gray-700 text-lg hover:text-[#5C427D] transition-colors duration-300">
+              <a href="mailto:pharmacarepharmacy@outlook.com" className="text-gray-700 text-sm hover:text-[#5C427D] transition-colors duration-300">
                 Email
               </a>
             </div>
             <div className="flex items-center space-x-3 text-lg">
               <img src="/images/phone.png" alt="Phone icon" className="h-6 w-6" />
-              <a href="tel:01922611963" className="text-gray-700 text-lg hover:text-[#5C427D] transition-colors duration-300">
+              <a href="tel:01922611963" className="text-gray-700 text-sm hover:text-[#5C427D] transition-colors duration-300">
                 Phone
               </a>
             </div>

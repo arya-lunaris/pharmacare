@@ -22,7 +22,7 @@ function Contact() {
   return (
     <div className="p-8 flex flex-col items-center">
       <h1
-        className={`mt-5 text-4xl font-bold text-[#5C427D] transition-all duration-700 ease-out
+        className={`mt-5 text-4xl font-normal text-[#5C427D] transition-all duration-700 ease-out
           ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
         style={{ transitionDelay: `${delays[0]}ms` }}
@@ -110,7 +110,7 @@ function Contact() {
         `}
         style={{ transitionDelay: `${delays[7]}ms` }}
       >
-        <h2 className="text-2xl font-bold text-[#5C427D] mb-4 text-center">Contact Our Team</h2>
+        <h2 className="text-2xl font-normal text-[#5C427D] mb-4 text-center">Contact Our Team</h2>
         <p className="mb-6 text-gray-700 text-center">
           Fill out this form and our specialist team will contact you as soon as possible.
         </p>

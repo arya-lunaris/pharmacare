@@ -12,7 +12,7 @@ const VaccinationServices = () => {
   return (
     <div className="service-page" style={{ textAlign: 'center', padding: '2rem' }}>
       <h1
-        className="text-4xl font-bold text-[#5C427D]"
+        className="text-4xl font-normal text-[#5C427D]"
         style={{
           marginBottom: '2rem',
           opacity: loaded ? 1 : 0,
@@ -41,7 +41,7 @@ const VaccinationServices = () => {
             transitionDelay: '0.2s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#5C427D' }}>
+          <h2 className="text-2xl" style={{ marginBottom: '1rem', fontWeight: 'normal', color: '#5C427D' }}>
             Flu Vaccination Service (NHS Service)
           </h2>
           <img src="/images/vaccine.jpg" alt="Flu vaccination NHS" className="mx-auto mb-4 w-[70%] rounded-2xl" />
@@ -79,7 +79,7 @@ const VaccinationServices = () => {
             transitionDelay: '0.4s',
           }}
         >
-          <h2 className="text-lg" style={{ marginBottom: '1rem', fontWeight: 'bold', color: '#5C427D' }}>Flu Vaccination Service (Paid Service)</h2>
+          <h2 className="text-2xl" style={{ marginBottom: '1rem', fontWeight: 'normal', color: '#5C427D' }}>Flu Vaccination Service (Paid Service)</h2>
           <img src="/images/vaccine-paid.jpg" alt="Flu vaccination Paid" className="mx-auto mb-4 w-[70%] rounded-2xl" />
           <p className="text-lg font-bold mb-2">
             Description:
