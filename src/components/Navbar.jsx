@@ -11,7 +11,7 @@ function Navbar() {
               <img
                 src="/images/pharmacare-logo.png"
                 alt="Pharmacare Logo"
-                className="h-16 w-auto -mt-2"
+                className="h-18 w-auto -mt-2"
               />
             </Link>
           </div>
