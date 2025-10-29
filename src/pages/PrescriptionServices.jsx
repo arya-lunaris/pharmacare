@@ -16,17 +16,17 @@ const servicesData = [
     details: null,
   },
   {
-    title: 'Pharmacy First Service',
-    description:
-      'Our Pharmacy First Service allows patients to access treatment for common conditions directly from our pharmacists — without the need to visit a GP. We can assess, advise, and prescribe medication where appropriate, helping you get fast and effective care right from your local pharmacy.',
-    image: '/images/pharmacyfirst.jpg',
-    details: null,
-  },
-  {
     title: 'Tailored Dispensing Solutions',
     description:
       'We provide accurate and dependable dispensing services designed around the individual needs of each resident. From new prescriptions to repeat supplies, every order is handled with precision, care, and confidentiality.',
     image: '/images/dispensing.jpg',
+    details: null,
+  },  
+  {
+    title: 'Pharmacy First Service',
+    description:
+      'Our Pharmacy First Service allows patients to access treatment for common conditions directly from our pharmacists — without the need to visit a GP. We can assess, advise, and prescribe medication where appropriate, helping you get fast and effective care right from your local pharmacy.',
+    image: '/images/pharmacyfirst.jpg',
     details: null,
   },
   {
@@ -114,17 +114,29 @@ export default function PrescriptionServices() {
               boxSizing: 'border-box',
             }}
           >
-            <h2 className="text-2xl font-normal text-[#5C427D]" style={{ marginBottom: service.details ? '1rem' : '1.25rem' }}>
+            <h2
+              className="text-2xl font-normal text-[#5C427D]"
+              style={{
+                marginBottom:
+                  service.title === 'Pharmacy First Service'
+                    ? '2rem'
+                    : service.details
+                    ? '1rem'
+                    : '1.25rem',
+              }}
+            >
               {service.title}
             </h2>
             {service.image && (
               <img
                 src={service.image}
                 alt={service.title}
-                className="mb-4 rounded-3xl object-contain"
+                className={`rounded-3xl object-contain ${
+                  service.title === 'Pharmacy First Service' ? 'mb-10' : 'mb-4'
+                }`}
                 style={{
-                  width: '100%',
-                  maxHeight: 192,
+                  width: service.title === 'Pharmacy First Service' ? '80%' : '100%',
+                  maxHeight: service.title === 'Pharmacy First Service' ? 160 : 192,
                   objectFit: 'contain',
                   borderRadius: '1rem',
                 }}

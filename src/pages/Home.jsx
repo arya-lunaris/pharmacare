@@ -140,7 +140,7 @@ function Home() {
       </div>
 
       <button
-        onClick={() => navigate('/about')}
+        onClick={() => navigate('/services')}
         className="px-6 py-3 bg-[#A996CA] text-white font-normal rounded-full transition-all cursor-pointer hover:ring-2 hover:ring-[#A996CA] hover:ring-offset-2 hover:ring-offset-white relative"
         style={{ ...getTransitionStyle(buttonDelay), top: '-20px' }}
       >

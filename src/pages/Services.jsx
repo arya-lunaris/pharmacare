@@ -38,11 +38,11 @@ function Services() {
         Our Services
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-10 mt-6 w-full max-w-5xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-6 w-full max-w-5xl mx-auto">
         {sections.map((section, index) => (
           <div
             key={section.title}
-            className={`bg-[#A996CA] text-white rounded-3xl p-8 flex flex-col justify-between items-center w-90 transition-all duration-500 transform ${
+            className={`bg-[#A996CA] text-white rounded-3xl p-8 flex flex-col justify-between items-center w-full max-w-[320px] transition-all duration-500 transform ${
               loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
             style={{ transitionDelay: `${300 + index * 100}ms` }}
