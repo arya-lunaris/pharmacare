@@ -60,7 +60,7 @@ function Home() {
         className="text-5xl font-normal text-[#5C427D] mb-5"
         style={getTransitionStyle(headingDelay)}
       >
-        Welcome to PharmaCare
+        Welcome to <span className="font-bold">Pharma</span>Care
       </h1>
       <p
         className="text-gray-600 max-w-2xl mx-auto mb-15"
