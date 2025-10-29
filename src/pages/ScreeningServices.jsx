@@ -8,7 +8,7 @@ const ScreeningServices = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: 'center', padding: '2rem' }}>
+    <div style={{ textAlign: 'center', padding: '1.5rem' }}>
       <h1
         className="text-4xl font-normal text-[#5C427D] mb-15"
         style={{
@@ -25,7 +25,7 @@ const ScreeningServices = () => {
           backgroundColor: 'white',
           color: 'black',
           borderRadius: '2rem',
-          maxWidth: '800px',
+          maxWidth: '500px',
           margin: '0 auto',
           padding: '2rem',
           opacity: loaded ? 1 : 0,
@@ -42,7 +42,7 @@ const ScreeningServices = () => {
         <img 
           src="/images/diabetes.png" 
           alt="Diabetes screening" 
-          style={{ width: '60%', borderRadius: '1rem', margin: '0 auto 1.5rem auto', display: 'block' }} 
+          style={{ width: '45%', borderRadius: '1rem', margin: '0 auto 1.5rem auto', display: 'block' }} 
         />
         <p style={{ marginBottom: '1.5rem' }}>
           Early detection of type 2 diabetes is crucial for effective management and prevention of complications. Our screening service helps identify individuals at risk through comprehensive assessments.

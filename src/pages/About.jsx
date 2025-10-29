@@ -14,90 +14,50 @@ function About() {
     transform: loaded ? 'translateY(0)' : 'translateY(20px)',
   });
 
+  const teams = [
+    {
+      title: 'Reception Team',
+      image: '/images/reception.jpg',
+      description: 'Our friendly reception team is the first point of contact for all patients. They manage appointments, answer queries, and provide essential guidance on pharmacy services. Always approachable and professional, they ensure a smooth and welcoming experience for everyone visiting the pharmacy.',
+    },
+    {
+      title: 'Dispensing Team',
+      image: '/images/dispensing-team.jpg',
+      description: 'Our skilled dispensing team prepares and checks prescriptions with utmost care. They ensure the correct medications are supplied, provide advice on usage, and work closely with pharmacists to maintain patient safety and accuracy. Their precision and attention to detail make sure your medicines are managed effectively.',
+    },
+    {
+      title: 'Management Team',
+      image: '/images/management-team.jpg',
+      description: 'Our management team oversees all pharmacy operations to ensure efficient, safe, and compliant services. They coordinate between departments, manage staff training, and implement policies that enhance patient care and community health. Their leadership ensures the pharmacy runs smoothly and upholds the highest professional standards.',
+    },
+  ];
+
   return (
     <div className="p-8 flex flex-col items-center text-center space-y-16">
       <h1
-        className="text-4xl font-normal text-[#5C427D] mb-15"
+        className="text-4xl font-normal text-[#5C427D] -mb-0"
         style={getTransitionStyle(200)}
       >
         About Us
       </h1>
 
-      {/* Reliable Deliveries */}
-      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(300)}>
-        <h2 className="text-2xl font-normal text-[#5C427D] mb-2">Prompt & Free Same-Day Medication Delivery</h2>
-        <img src={`/images/delivery.jpg`} alt="Reliable medication delivery" className="w-100 h-80 object-contain rounded-3xl mb-4 mx-auto" />
-        <p className="text-gray-700 text-lg">
-          Our in-house delivery team ensures every prescription arrives safely and on time — including urgent and same-day acute medications, completely free of charge. 
-          We understand the importance of quick, reliable service, so patients and care homes can count on us for prompt delivery every time.
-        </p>
-      </section>
-
-      {/* Complementary Audits */}
-      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(700)}>
-        <h2 className="text-2xl font-normal text-[#5C427D] -mb-4">Free Medication Audits for Care Homes</h2>
-        <img src={`/images/review.jpg`} alt="Medication management review" className="w-100 h-80 object-contain rounded-3xl mb-4 mx-auto" />
-        <p className="text-gray-700 text-lg">
-          We offer <strong>free, pharmacist-led medication audits</strong> for nursing and care homes. 
-          Our audits assess medication management procedures, identify risks, and ensure CQC compliance. 
-          With our support, care homes can maintain safe, effective, and compliant practices while improving overall medication safety.
-        </p>
-      </section>
-
-      {/* Vaccination Services */}
-      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(800)}>
-        <h2 className="text-2xl font-normal text-[#5C427D] mb-4">Flu & COVID Vaccination Services</h2>
-        <img src={`/images/vaccinations.jpg`} alt="On-site vaccination clinics" className="w-72 h-72 object-contain rounded-3xl mb-4 mx-auto" />
-        <p className="text-gray-700 text-lg">
-          Our pharmacy offers <strong>flu and COVID-19 vaccinations</strong>, administered by qualified pharmacists in a safe and comfortable setting. 
-          Whether in-store or as part of our on-site vaccination clinics, we make it easy for patients and residents to stay protected and up to date.
-        </p>
-      </section>
-
-      {/* Pharmacy First Service */}
-      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(900)}>
-        <h2 className="text-2xl font-normal text-[#5C427D] mb-8">Pharmacy First Service</h2>
-        <img
-          src={`/images/pharmacyfirst.jpg`}
-          alt="Pharmacy First Service"
-          className="w-80 mx-auto rounded-3xl m-5 mb-10"
-        />
-        <p className="text-gray-700 text-lg">
-          Our <strong>Pharmacy First Service</strong> allows patients to access treatment for common conditions directly from our pharmacists — without the need to visit a GP. 
-          We can assess, advise, and prescribe medication where appropriate, helping you get fast and effective care right from your local pharmacy.
-        </p>
-      </section>
-
-      {/* Bespoke Medication Dispensing */}
-      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(400)}>
-        <h2 className="text-2xl font-normal text-[#5C427D] mb-4">Tailored Dispensing Solutions</h2>
-        <img src={`/images/dispensing.jpg`} alt="Tailored medication dispensing" className="w-90 h-72 object-contain rounded-3xl mb-4 mx-auto" />
-        <p className="text-gray-700 text-lg">
-          We provide accurate and dependable dispensing services designed around the individual needs of each resident. 
-          From new prescriptions to repeat supplies, every order is handled with precision, care, and confidentiality.
-        </p>
-      </section>
-
-      {/* Professional Guidance & Support */}
-      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(500)}>
-        <h2 className="text-2xl font-normal text-[#5C427D] -mb-4">Pharmacist Expertise When You Need It</h2>
-        <img src={`/images/pharmacists.jpg`} alt="Professional pharmacist guidance" className="w-100 h-72 object-contain rounded-3xl mb-4 mx-auto rounded-md" />
-        <p className="text-gray-700 text-lg">
-          Our pharmacists are always available to review medications, offer professional advice, 
-          and assist care staff with urgent or out-of-hours queries. 
-          We’re here to help maintain safe, effective medicine use at all times.
-        </p>
-      </section>
-
-      {/* Care Staff Training */}
-      <section className="max-w-3xl border-2 border-[#A996CA] rounded-3xl p-6 bg-white shadow-sm" style={getTransitionStyle(600)}>
-        <h2 className="text-2xl font-normal text-[#5C427D] -mb-2">Specialised Training for Care Teams</h2>
-        <img src={`/images/team.jpg`} alt="Care staff training session" className="w-110 h-80 object-contain rounded-3xl mb-4 mx-auto" />
-        <p className="text-gray-700 text-lg">
-          Our pharmacist-led training sessions help care staff gain confidence in medicine administration and handling. 
-          Each session is tailored to your setting, ensuring your team meets all current safety and regulatory standards.
-        </p>
-      </section>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 w-full max-w-7xl mx-auto" style={getTransitionStyle(300)}>
+        {teams.map((team, index) => (
+          <section
+            key={index}
+            className="border-2 border-[#A996CA] rounded-3xl p-4 bg-white shadow-sm flex flex-col items-center text-center space-y-3"
+            style={getTransitionStyle(400 + index * 200)}
+          >
+            <h2 className="text-2xl font-normal text-[#5C427D] -mb-4">{team.title}</h2>
+            <img
+              src={team.image}
+              alt={team.title}
+              className="w-72 h-64 object-contain rounded-3xl -mb-2"
+            />
+            <p className="text-gray-700 text-base">{team.description}</p>
+          </section>
+        ))}
+      </div>
     </div>
   );
 }

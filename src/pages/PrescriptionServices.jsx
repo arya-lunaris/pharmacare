@@ -1,9 +1,39 @@
 import React, { useState, useEffect } from 'react';
 
-const services = [
+const servicesData = [
+  {
+    title: 'Prompt & Free Same-Day Medication Delivery',
+    description:
+      'Our in-house delivery team ensures every prescription arrives safely and on time — including urgent and same-day acute medications, completely free of charge. We understand the importance of quick, reliable service, so patients and care homes can count on us for prompt delivery every time.',
+    image: '/images/delivery.jpg',
+    details: null,
+  },
+  {
+    title: 'Free Medication Audits for Care Homes',
+    description:
+      'We offer free, pharmacist-led medication audits for nursing and care homes. Our audits assess medication management procedures, identify risks, and ensure CQC compliance. With our support, care homes can maintain safe, effective, and compliant practices while improving overall medication safety.',
+    image: '/images/review.jpg',
+    details: null,
+  },
+  {
+    title: 'Pharmacy First Service',
+    description:
+      'Our Pharmacy First Service allows patients to access treatment for common conditions directly from our pharmacists — without the need to visit a GP. We can assess, advise, and prescribe medication where appropriate, helping you get fast and effective care right from your local pharmacy.',
+    image: '/images/pharmacyfirst.jpg',
+    details: null,
+  },
+  {
+    title: 'Tailored Dispensing Solutions',
+    description:
+      'We provide accurate and dependable dispensing services designed around the individual needs of each resident. From new prescriptions to repeat supplies, every order is handled with precision, care, and confidentiality.',
+    image: '/images/dispensing.jpg',
+    details: null,
+  },
   {
     title: 'Medical Supplies (Appliances)',
-    description: 'We provide a wide range of medical supplies and appliances to support your health and wellbeing.',
+    description:
+      'We provide a wide range of medical supplies and appliances to support your health and wellbeing.',
+    image: '/images/medical-supplies.jpg',
     details: [
       'Wheelchairs and mobility aids',
       'Orthopedic supports and braces',
@@ -12,28 +42,10 @@ const services = [
     ],
   },
   {
-    title: 'New Medicine Service',
-    description: 'Our new medicine service ensures you receive the correct guidance and support when starting new medications.',
-    details: [
-      'Medication counseling',
-      'Side effect monitoring',
-      'Personalized dosage instructions',
-      'Follow-up consultations',
-    ],
-  },
-  {
-    title: 'Prescription Delivery Service',
-    description: 'Convenient and reliable delivery of your prescriptions directly to your doorstep.',
-    details: [
-      'Fast and secure delivery',
-      'Flexible delivery scheduling',
-      'Real-time tracking',
-      'Contactless delivery options',
-    ],
-  },
-  {
     title: 'Stoma Bag Support Service',
-    description: 'Specialized support for patients using stoma bags, including supplies and expert advice.',
+    description:
+      'Specialized support for patients using stoma bags, including supplies and expert advice.',
+    image: '/images/stoma.jpg',
     details: [
       'Quality stoma bags and accessories',
       'Fitting and replacement guidance',
@@ -42,6 +54,14 @@ const services = [
     ],
   },
 ];
+
+function getTransitionStyle(delay, loaded) {
+  return {
+    opacity: loaded ? 1 : 0,
+    transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+    transition: `opacity 0.6s ease ${delay}ms, transform 0.6s ease ${delay}ms`,
+  };
+}
 
 export default function PrescriptionServices() {
   const [loaded, setLoaded] = useState(false);
@@ -54,59 +74,86 @@ export default function PrescriptionServices() {
   return (
     <div
       style={{
-        maxWidth: 800,
+        maxWidth: 1200,
         margin: '0 auto',
         padding: '2rem 1rem',
         textAlign: 'center',
       }}
     >
-      <h1 className="text-4xl font-normal text-[#5C427D] mb-15" style={{
-        opacity: loaded ? 1 : 0,
-        transform: loaded ? 'translateY(0)' : 'translateY(20px)',
-        transition: 'opacity 0.6s ease, transform 0.6s ease',
-      }}>Prescription Services</h1>
-      <div
+      <h1
+        className="text-4xl font-normal text-[#5C427D] mb-15"
         style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr',
-          gap: '3rem',
-          textAlign: 'center',
+          opacity: loaded ? 1 : 0,
+          transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+          transition: 'opacity 0.6s ease, transform 0.6s ease',
+          marginBottom: '3rem',
         }}
       >
-        {services.map((service, index) => (
+        Prescription Services
+      </h1>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8"
+      >
+        {servicesData.map((service, index) => (
           <section
             key={service.title}
             style={{
+              ...getTransitionStyle(200 + index * 200, loaded),
               backgroundColor: 'white',
               color: 'black',
               border: '2px solid #A996CA',
               borderRadius: '2rem',
               padding: '1.5rem 2rem',
-              opacity: loaded ? 1 : 0,
-              transform: loaded ? 'translateY(0)' : 'translateY(20px)',
-              transition: `opacity 0.6s ease ${0.2 + index * 0.2}s, transform 0.6s ease ${0.2 + index * 0.2}s`,
+              width: '100%',
+              maxWidth: 360,
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
               textAlign: 'center',
+              boxSizing: 'border-box',
             }}
           >
-            <h2 className="text-2xl font-normal text-[#5C427D]">{service.title}</h2>
-            {service.title === 'Medical Supplies (Appliances)' && (
-              <img src="/images/medical-supplies.jpg" alt="Medical Supplies" className="mx-auto rounded-2xl mb-2" style={{ width: '70%', maxWidth: '70%' }} />
+            <h2 className="text-2xl font-normal text-[#5C427D]" style={{ marginBottom: service.details ? '1rem' : '1.25rem' }}>
+              {service.title}
+            </h2>
+            {service.image && (
+              <img
+                src={service.image}
+                alt={service.title}
+                className="mb-4 rounded-3xl object-contain"
+                style={{
+                  width: '100%',
+                  maxHeight: 192,
+                  objectFit: 'contain',
+                  borderRadius: '1rem',
+                }}
+              />
             )}
-            {service.title === 'New Medicine Service' && (
-              <img src="/images/medical-service.jpg" alt="New Medicine Service" className="mx-auto rounded-2xl mb-2" style={{ width: '70%', maxWidth: '70%' }} />
+            <p
+              className="text-gray-700 text-base"
+              style={{ marginBottom: service.details ? '1rem' : 0, flexGrow: 1 }}
+            >
+              {service.description}
+            </p>
+            {service.details && (
+              <ul
+                style={{
+                  listStyleType: 'disc',
+                  paddingLeft: '1.25rem',
+                  textAlign: 'left',
+                  width: '100%',
+                  maxWidth: 320,
+                  margin: '0 auto 0',
+                }}
+              >
+                {service.details.map((detail) => (
+                  <li key={detail} style={{ marginBottom: '0.4rem' }}>
+                    {detail}
+                  </li>
+                ))}
+              </ul>
             )}
-            {service.title === 'Prescription Delivery Service' && (
-              <img src="/images/prescriptions.jpg" alt="Prescription Delivery Service" className="mx-auto rounded-2xl mb-2" style={{ width: '70%', maxWidth: '70%' }} />
-            )}
-            {service.title === 'Stoma Bag Support Service' && (
-              <img src="/images/stoma.jpg" alt="Stoma Bag Support Service" className="mx-auto rounded-2xl mb-2" style={{ width: '70%', maxWidth: '70%' }} />
-            )}
-            <p className="text-lg" style={{ margin: '0.75rem 0 1.5rem' }}>{service.description}</p>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '1.25rem', textAlign: 'left', maxWidth: 600, margin: '0 auto', display: 'inline-block' }}>
-              {service.details.map((detail) => (
-                <li key={detail} style={{ marginBottom: '0.4rem' }}>{detail}</li>
-              ))}
-            </ul>
           </section>
         ))}
       </div>
