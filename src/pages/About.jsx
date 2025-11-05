@@ -35,13 +35,13 @@ function About() {
   return (
     <div className="p-8 flex flex-col items-center text-center space-y-16">
       <h1
-        className="text-4xl font-normal text-[#5C427D] -mb-0"
+        className="text-4xl font-normal text-[#5C427D] mb-10"
         style={getTransitionStyle(200)}
       >
         About Us
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 w-full max-w-7xl mx-auto" style={getTransitionStyle(300)}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-12 w-full max-w-7xl mx-auto" style={getTransitionStyle(300)}>
         {teams.map((team, index) => (
           <section
             key={index}

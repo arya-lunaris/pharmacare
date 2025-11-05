@@ -30,7 +30,7 @@ function Services() {
   return (
     <div className="p-8 flex flex-col items-center space-y-6">
       <h1
-        className={`text-4xl font-normal text-[#5C427D] transition-all duration-500 transform ${
+        className={`text-4xl font-normal text-[#5C427D] mb-15 transition-all duration-500 transform ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
         style={{ transitionDelay: "100ms" }}
@@ -38,7 +38,7 @@ function Services() {
         Our Services
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-6 w-full max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 mt-6 w-full max-w-5xl mx-auto">
         {sections.map((section, index) => (
           <div
             key={section.title}
